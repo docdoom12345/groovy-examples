@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.groovy.MathSpec" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-02-23T09:45:58" hostname="master" time="0.016">
+  <properties/>
+  <testcase name="maximum [a: 1, b: 2, c: 2, #0]" classname="test.groovy.MathSpec" time="0.013"/>
+  <testcase name="maximum [a: 5, b: 7, c: 7, #1]" classname="test.groovy.MathSpec" time="0.0"/>
+  <testcase name="maximum [a: 20, b: 10, c: 20, #2]" classname="test.groovy.MathSpec" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

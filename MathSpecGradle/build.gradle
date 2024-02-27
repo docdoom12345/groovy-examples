@@ -1,0 +1,26 @@
+import java.text.*
+import java.util.*
+plugins {
+	id 'groovy'
+}
+repositories {
+	mavenCentral()
+}
+dependencies {
+	implementation 'org.codehaus.groovy:groovy-all:3.0.20'
+	testImplementation 'org.spockframework:spock-core:2.4-M1-groovy-3.0'
+	testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+}
+sourceSets {
+	test {
+		groovy {
+			srcDirs = ['src/test/groovy']
+		}
+	}
+}
+test {
+	def formattedDate = new SimpleDateFormat("yyyyMMdd-HHmmss").format(new Date()) //for preserving test result
+	println(formattedDate)
+	useJUnitPlatform()
+	reports.html.destination = file("$buildDir/reports/tests/${name}-${formattedDate}") // for preserving test result
+}
